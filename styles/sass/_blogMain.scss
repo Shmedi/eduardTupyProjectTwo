@@ -24,6 +24,45 @@
   }
 }
 
+aside {
+  img{
+    width: 420px;
+    margin-right: 150px;
+    position: relative;
+    bottom: -100px;
+  }
+
+  ul {
+    display: block;
+    padding: 0 20px;
+      li {
+        list-style-type: disc;
+        color: $altFontColor;
+      }
+  }
+
+  .statement {
+    background-color: $secondary;
+    width: 375px;
+    padding: 400px 10px 20px 40px;
+    margin: -275px 0 0 70px;
+      h4 {
+        text-transform: uppercase;
+        color: $accent;
+        font-family: $secondaryFont;
+        font-size: 2.5rem;
+        font-weight: normal;
+        line-height: 58px;
+        letter-spacing: 0.8px;
+      }
+
+      p {
+        color: $altFontColor;
+        padding-bottom: 40px;
+      }
+  }
+}
+
 .commentSection {
   max-width: 750px;
   margin-top: 50px;
@@ -50,45 +89,6 @@
         padding-left: 150px;
        }
     }
-}
-
-aside {
-  img{
-    width: 420px;
-    margin-right: 150px;
-    position: relative;
-    bottom: -100px;
-  }
-
-  ul {
-    display: block;
-    padding: 0 20px;
-      li {
-        list-style-type: disc;
-        color: $altFontColor;
-      }
-  }
-
-  .statement {
-    background-color: $secondary;
-    max-width: 375px;
-    padding: 400px 10px 20px 40px;
-    margin: -275px 0 0 70px;
-      h4 {
-        text-transform: uppercase;
-        color: $accent;
-        font-family: $secondaryFont;
-        font-size: 2.5rem;
-        font-weight: normal;
-        line-height: 58px;
-        letter-spacing: 0.8px;
-      }
-
-      p {
-        color: $altFontColor;
-        padding-bottom: 40px;
-      }
-  }
 }
 
 .commentForm {

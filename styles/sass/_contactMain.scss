@@ -32,10 +32,10 @@
 .contactForm{
   background-color: $secondary;
   text-align: center;
+  margin-left: 100px;
   width: 900px;
   position: relative;
   top: -150px;
-  right: -100px;
   @include boxShadow (25px);
     input[type=text],
     input[type=email] {

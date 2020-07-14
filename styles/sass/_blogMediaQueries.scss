@@ -1,0 +1,135 @@
+// =========================================== 1140px ===========================================
+
+@media (max-width: 1140px) {
+  .blogHeader {
+    h1 {
+      margin-top: 250px;
+    }
+  }
+
+  .blogSection {
+    display: block;
+      .blog {
+        border-left: none;
+        padding: 0;
+          img {
+            position: static;
+            box-shadow: none;
+            border: 10px solid $accent;
+          }
+
+          h2 {
+            margin: 40px 0 0 0;
+            padding-left: 60px;
+          }
+
+          p:last-child {
+            padding-bottom: 80px;
+          }
+      }
+  }
+
+  aside {
+    max-width: 400px;
+      img {
+        width: 100%;
+        margin: 0;
+      }
+
+      .statement {
+        width: 400px;
+        margin: 0;
+        padding: 120px 20px 50px 20px;
+      }
+  }
+
+  .commentSection {
+    max-width: 550px;
+    margin-top: -800px;
+  }
+
+  .commentForm {
+    input[type=text],
+    input[type=email],
+    textarea {
+      display: block;
+      width: 100%;
+      margin: 30px 0 0 0;
+    }
+
+    input[type=submit]{
+      width: 100%;
+      margin: 50px 0;
+    }
+  }
+} 
+
+// =========================================== 1000px ===========================================
+
+@media (max-width: 1000px) {
+  aside {
+    display: block;
+    max-width: 100%;
+      img {
+        position: static;
+      }
+
+      .statement {
+        width: 100%;
+        padding: 50px 20px;
+      }
+  }
+
+  .commentSection {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+// =========================================== 440px ===========================================
+
+@media (max-width: 440px) {
+  .blogHeader {
+    nav {
+      display: none;
+    }
+
+    i.fa-bars{
+      visibility: visible;
+      color: $altFontColor;
+    }
+
+    h1 {
+      margin-top: 0;
+      padding-top: 550px;
+    }
+  }
+
+  .blogSection {
+      .blog {
+        text-align: center;
+          h2 {
+            font-size: 3.5rem;
+            line-height: 60px;
+            padding: 0;
+          }
+
+          p {
+            padding-left: 0;
+          }
+     }
+  }
+
+  .commentSection {
+    float: none;
+      img {
+        float: none;
+      }
+
+      .post {
+        p {
+          padding: 15px 0 10px 0;
+        }
+      }
+  }
+}

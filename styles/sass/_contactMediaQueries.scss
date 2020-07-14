@@ -1,0 +1,87 @@
+// =========================================== 770px ===========================================
+
+@media (max-width: 770px) {
+  .contactBody {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .socialContainer {
+    nav {
+      justify-content: center;
+      margin: 80px 0;
+        li {
+          a {
+            padding: 30px;
+            margin: 0 20px;
+          }
+        }
+    }
+  }
+
+  .contactForm {
+    display: block;
+    position: static;
+    max-width: 100%;
+    margin: 50px 0;
+      input[type=text],
+      input[type=email],
+      textarea {
+        justify-content: center;
+        width: 85%;
+        margin: 30px 0;
+      }
+
+      input[type=submit]{
+        margin-bottom: 50px;
+    }
+  }
+}
+
+// =========================================== 670px ===========================================
+
+@media (max-width: 670px) {
+  .contactHeader {
+      h1 {
+        line-height: 80px;
+        font-size: 7rem;
+    }
+  }
+
+  .contactForm {
+    box-shadow: none;
+    border: 10px solid $accent;
+  }
+}
+
+// =========================================== 570px ===========================================
+
+@media (max-width: 570px) {
+  .socialContainer{
+    nav {
+      li {
+        a {
+          padding: 10px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+
+// =========================================== 440px ===========================================
+
+  @media (max-width: 440px) {
+    .contactHeader {
+      nav {
+        display: none;
+      }
+  
+      i.fa-bars{
+        visibility: visible;
+        color: $altFontColor;
+      }
+    }
+  }  

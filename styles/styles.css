@@ -652,6 +652,45 @@ article div h2 {
   padding: 15px 0 15px 60px;
 }
 
+aside img {
+  width: 420px;
+  margin-right: 150px;
+  position: relative;
+  bottom: -100px;
+}
+
+aside ul {
+  display: block;
+  padding: 0 20px;
+}
+
+aside ul li {
+  list-style-type: disc;
+  color: #FFF;
+}
+
+aside .statement {
+  background-color: #0D457F;
+  width: 375px;
+  padding: 400px 10px 20px 40px;
+  margin: -275px 0 0 70px;
+}
+
+aside .statement h4 {
+  text-transform: uppercase;
+  color: #FDD908;
+  font-family: "IM Fell English", serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 58px;
+  letter-spacing: 0.8px;
+}
+
+aside .statement p {
+  color: #FFF;
+  padding-bottom: 40px;
+}
+
 .commentSection {
   max-width: 750px;
   margin-top: 50px;
@@ -685,45 +724,6 @@ article div h2 {
 
 .commentSection .post p {
   padding-left: 150px;
-}
-
-aside img {
-  width: 420px;
-  margin-right: 150px;
-  position: relative;
-  bottom: -100px;
-}
-
-aside ul {
-  display: block;
-  padding: 0 20px;
-}
-
-aside ul li {
-  list-style-type: disc;
-  color: #FFF;
-}
-
-aside .statement {
-  background-color: #0D457F;
-  max-width: 375px;
-  padding: 400px 10px 20px 40px;
-  margin: -275px 0 0 70px;
-}
-
-aside .statement h4 {
-  text-transform: uppercase;
-  color: #FDD908;
-  font-family: "IM Fell English", serif;
-  font-size: 2.5rem;
-  font-weight: normal;
-  line-height: 58px;
-  letter-spacing: 0.8px;
-}
-
-aside .statement p {
-  color: #FFF;
-  padding-bottom: 40px;
 }
 
 .commentForm input[type=text],
@@ -840,10 +840,10 @@ aside .statement p {
 .contactForm {
   background-color: #0D457F;
   text-align: center;
+  margin-left: 100px;
   width: 900px;
   position: relative;
   top: -150px;
-  right: -100px;
   -webkit-box-shadow: 25px 25px 0 0 #FDD908;
           box-shadow: 25px 25px 0 0 #FDD908;
 }
@@ -1000,11 +1000,11 @@ footer a {
 @media (max-width: 620px) {
   .homeHeader h1 {
     font-size: 5.5rem;
-    margin-top: 250px;
+    margin-top: 300px;
   }
   .imageContainer img {
     width: 400px;
-    bottom: 0;
+    top: 800px;
   }
   .socialSection {
     padding: 100px 50px;
@@ -1039,11 +1039,11 @@ footer a {
   .homeHeader h1 {
     font-size: 4rem;
     line-height: 50px;
-    margin-top: 380px;
+    margin-top: 450px;
   }
   .imageContainer img {
     width: 320px;
-    top: 700px;
+    top: 850px;
   }
   .socialSection {
     text-align: center;
@@ -1076,5 +1076,176 @@ footer a {
   article div h2 {
     line-height: 52px;
     padding: 30px 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .blogHeader h1 {
+    margin-top: 250px;
+  }
+  .blogSection {
+    display: block;
+  }
+  .blogSection .blog {
+    border-left: none;
+    padding: 0;
+  }
+  .blogSection .blog img {
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 10px solid #FDD908;
+  }
+  .blogSection .blog h2 {
+    margin: 40px 0 0 0;
+    padding-left: 60px;
+  }
+  .blogSection .blog p:last-child {
+    padding-bottom: 80px;
+  }
+  aside {
+    max-width: 400px;
+  }
+  aside img {
+    width: 100%;
+    margin: 0;
+  }
+  aside .statement {
+    width: 400px;
+    margin: 0;
+    padding: 120px 20px 50px 20px;
+  }
+  .commentSection {
+    max-width: 550px;
+    margin-top: -800px;
+  }
+  .commentForm input[type=text],
+  .commentForm input[type=email],
+  .commentForm textarea {
+    display: block;
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  .commentForm input[type=submit] {
+    width: 100%;
+    margin: 50px 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  aside {
+    display: block;
+    max-width: 100%;
+  }
+  aside img {
+    position: static;
+  }
+  aside .statement {
+    width: 100%;
+    padding: 50px 20px;
+  }
+  .commentSection {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .blogHeader nav {
+    display: none;
+  }
+  .blogHeader i.fa-bars {
+    visibility: visible;
+    color: #FFF;
+  }
+  .blogHeader h1 {
+    margin-top: 0;
+    padding-top: 550px;
+  }
+  .blogSection .blog {
+    text-align: center;
+  }
+  .blogSection .blog h2 {
+    font-size: 3.5rem;
+    line-height: 60px;
+    padding: 0;
+  }
+  .blogSection .blog p {
+    padding-left: 0;
+  }
+  .commentSection {
+    float: none;
+  }
+  .commentSection img {
+    float: none;
+  }
+  .commentSection .post p {
+    padding: 15px 0 10px 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .contactBody {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .socialContainer nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 80px 0;
+  }
+  .socialContainer nav li a {
+    padding: 30px;
+    margin: 0 20px;
+  }
+  .contactForm {
+    display: block;
+    position: static;
+    max-width: 100%;
+    margin: 50px 0;
+  }
+  .contactForm input[type=text],
+  .contactForm input[type=email],
+  .contactForm textarea {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 85%;
+    margin: 30px 0;
+  }
+  .contactForm input[type=submit] {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 670px) {
+  .contactHeader h1 {
+    line-height: 80px;
+    font-size: 7rem;
+  }
+  .contactForm {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 10px solid #FDD908;
+  }
+}
+
+@media (max-width: 570px) {
+  .socialContainer nav li a {
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 440px) {
+  .contactHeader nav {
+    display: none;
+  }
+  .contactHeader i.fa-bars {
+    visibility: visible;
+    color: #FFF;
   }
 }
