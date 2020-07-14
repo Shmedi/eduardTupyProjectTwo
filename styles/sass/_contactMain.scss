@@ -1,0 +1,71 @@
+// == CONTACT
+
+.contactBody{
+  display: flex;
+  height: 580px;
+}
+
+.socialContainer {
+  nav {
+    display: flex;
+    margin: 120px 0 20px 0;
+    li {
+      list-style: none;
+        a{
+          color: $secondary;
+          font-size: 1.5rem;
+          padding: 20px 20px 20px 0;
+          transition: all 0.5s;
+            &:hover,
+            &:focus {
+              color: $accent;
+          }
+        }
+    }
+  }
+
+  p:nth-of-type(1){
+    margin-bottom: 30px;
+  }
+}
+
+.contactForm{
+  background-color: $secondary;
+  text-align: center;
+  width: 900px;
+  position: relative;
+  top: -150px;
+  right: -100px;
+  @include boxShadow (25px);
+    input[type=text],
+    input[type=email] {
+      @include inputStyle ($secondary, $altFontColor, 40%);
+    }
+}
+
+.messageBox {
+  display: flex;
+  justify-content: center;
+}
+
+textarea{
+  @include textareaStyle ($secondary, $altFontColor, 85%);
+}
+
+::placeholder{
+  color: $altFontColor;
+}
+
+input[type=submit]{
+  @include buttonStyle;
+  margin-bottom: 120px;
+  width: 85%;
+  transition: all 0.5s;
+    &:hover,
+    &:focus {
+      color: $accent;
+      background-color: $secondary;
+      border: 2px solid $accent;
+      cursor: pointer;
+  }
+}

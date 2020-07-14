@@ -1,0 +1,16 @@
+// == FOOTER
+
+footer {
+  text-align: center;
+  padding: 2px 0;
+  background-color: $accent;
+  clear: both;
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+}

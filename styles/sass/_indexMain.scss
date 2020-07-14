@@ -1,0 +1,152 @@
+// == INDEX
+
+main {
+  button {
+    transition: all 0.5s;
+    @include buttonStyle;
+      &:hover,
+      &:focus {
+        background-color: $secondary;
+        color: $altFontColor;
+        cursor: pointer;
+    }
+  }
+}
+
+.socialSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 225px 0 150px 0;
+    div {
+     max-width: 620px;
+     position: relative;
+     padding: 40px 0 40px 50px;
+      a {
+        font-size: 3.0rem;
+        color: #000;
+        padding-top: 12px;
+        position: absolute;
+        left: -30px;
+        top: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $accent;
+        text-align: center;
+        transition: all 0.5s;
+          &:hover,
+          &:focus {
+            background-color: $secondary;
+            color: $altFontColor;
+          }
+      }
+
+      h2 {
+        font-size: 4.5rem;
+        font-family: $secondaryFont;
+        font-weight: 400;
+        padding-bottom: 25px;
+        color: $secondary;
+        text-transform: uppercase;
+      }
+   }
+}
+
+.altColor {
+    background-color: $secondary;
+  }
+
+.featureSection {
+  display: grid;
+  height: 850px;
+  color: $altFontColor;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  grid-column-gap: 200px;
+  grid-row-gap: 120px;
+  
+    .leftImage {
+      max-width: 700px;
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      position: relative;
+      top: -40px;
+      @include boxShadow (25px);
+    }
+
+    .programs {
+      grid-column: 2 / span 1;
+      grid-row: 1 / span 1;
+      padding: 80px 65px 0 0;
+       h2 {
+         @include featureHeadings;
+       }
+    }
+
+    .locations {
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+      padding: 80px 0 0 65px;
+      text-align: right;
+        h2 {
+          @include featureHeadings;
+        }
+    }
+
+    .rightImage {
+      max-width: 700px;
+      grid-column: 2 / span 1;
+      grid-row: 2 / span 1;
+      position: relative;
+      bottom: -80px;
+      @include boxShadow (-25px);
+    }
+
+    button {
+        &:hover,
+        &:focus {
+          border: 2px solid $accent;
+        }
+    }
+}
+
+.vacationInfo{
+  text-align: center;
+  padding: 150px 0;
+    h2{
+      @include sectionHeadings;
+    }
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  padding: 150px 0;
+    img {
+      grid-column: 1 / span 1;
+      grid-row: 1 / span 1;
+      width: 350px;
+      @include boxShadow (-25px);
+      margin-left: 40px;
+    }
+
+    div {
+      grid-column: 2 / span 2;
+      grid-row: 1 / span 1;
+      padding-left: 50px;
+       h2 {
+         @include sectionHeadings;
+       }
+    }
+}
+
+.galleryContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 100px 0;
+    img {
+      padding: 15px;
+    }
+}

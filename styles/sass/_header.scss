@@ -1,0 +1,38 @@
+// == HEADER
+
+.homeHeader {
+  display: flex;
+  @include headerImage('../images/home-header.jpg');
+    h1 {
+      @include headerText($accent);
+      margin-top: 450px;
+      max-width: 500px;
+      line-height: 100px;
+    }
+}
+
+.imageContainer{
+  position: relative;
+    img {
+      position: absolute;
+      right: 0;
+      top: 380px;
+      width: 800px;
+    }
+}
+
+.blogHeader {
+  @include headerImage('../images/blog-header.jpg');
+    h1 {
+      @include headerText($altFontColor);
+      padding-top: 200px;
+    }
+}
+
+.contactHeader {
+  @include headerImage('../images/contact-header.jpg');
+    h1 {
+      @include headerText($altFontColor);
+      padding-top: 200px;
+    }
+}

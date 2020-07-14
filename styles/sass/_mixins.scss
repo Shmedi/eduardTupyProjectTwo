@@ -1,0 +1,71 @@
+@mixin headerImage ($path) {
+  background: url($path);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@mixin headerText ($colorShade) {
+  font-family: $secondaryFont;
+  font-weight: 400;
+  color: $colorShade;
+  font-size: 7.9rem;
+  text-transform: uppercase;
+}
+
+@mixin sectionHeadings {
+  font-family: $secondaryFont;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 99.8px;
+  text-transform: uppercase;
+  color: $secondary;
+}
+
+@mixin featureHeadings {
+  font-family: $secondaryFont;
+  font-size: 4.0rem;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+@mixin inputStyle ($color, $textColor, $size) {
+  border: none;
+  border-bottom: 2px solid $accent;
+  background-color: $color;
+  color: $textColor;
+  padding: 20px;
+  margin: 60px 20px 30px 20px;
+  width: $size;
+}
+
+@mixin textareaStyle ($color, $textColor, $size) {
+  resize: none;
+  display: block;
+  border: 2px solid $accent;
+  background-color: $color;
+  color: $textColor;
+  padding: 20px;
+  width: $size;
+  height: 250px;
+  margin: 20px 0;
+}
+
+@mixin buttonStyle {
+  padding: 10px 15px;
+  margin-top: 30px;
+  font-family: $secondaryFont;
+  font-size: 2.24rem;
+  line-height: 41.6px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  color: $secondary;
+  background-color: $accent;
+}
+
+@mixin boxShadow ($shadowValue) {
+  box-shadow: ($shadowValue) 25px 0 0 $accent;
+}

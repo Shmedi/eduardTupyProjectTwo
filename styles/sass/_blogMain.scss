@@ -1,0 +1,128 @@
+.blogSection {
+  display: flex;
+  flex-direction: row-reverse;
+    .blog {
+    border-bottom: 4px solid $accent;
+    border-left: 4px solid $accent;
+    padding: 0 0 140px 21px;
+      img {
+        @include boxShadow (-25px);
+        width: 100%;
+        position: relative;
+        top: -250px;
+      }
+
+      h2 {
+        @include sectionHeadings;
+        margin-top: -180px;
+        padding-left: 60px;
+      }
+
+      p {
+       padding: 15px 0 15px 60px;
+    }
+  }
+}
+
+.commentSection {
+  max-width: 750px;
+  margin-top: 50px;
+  float: right;
+    h3 {
+      @include sectionHeadings;
+    }
+
+    img {
+      width: 100px;
+      float: left;
+    }
+
+    .post {
+      margin-bottom: 80px;
+       span {
+        color: $secondary;
+        font-weight: 700;
+        font-size: 2.1rem;
+        padding-bottom: 10px;
+       }
+
+       p {
+        padding-left: 150px;
+       }
+    }
+}
+
+aside {
+  img{
+    width: 420px;
+    margin-right: 150px;
+    position: relative;
+    bottom: -100px;
+  }
+
+  ul {
+    display: block;
+    padding: 0 20px;
+      li {
+        list-style-type: disc;
+        color: $altFontColor;
+      }
+  }
+
+  .statement {
+    background-color: $secondary;
+    max-width: 375px;
+    padding: 400px 10px 20px 40px;
+    margin: -275px 0 0 70px;
+      h4 {
+        text-transform: uppercase;
+        color: $accent;
+        font-family: $secondaryFont;
+        font-size: 2.5rem;
+        font-weight: normal;
+        line-height: 58px;
+        letter-spacing: 0.8px;
+      }
+
+      p {
+        color: $altFontColor;
+        padding-bottom: 40px;
+      }
+  }
+}
+
+.commentForm {
+  input[type=text],
+  input[type=email] {
+    @include inputStyle($primary, #000, 330px);
+  }
+
+  .messageBox{
+    display: flex;
+    justify-content: center;
+  }
+  
+  textarea{
+    @include textareaStyle($primary, #000, 95%);
+  }
+
+  input[type=submit]{
+    @include buttonStyle;
+    color: $accent;
+    background-color: $secondary;
+    margin: 30px 20px 100px 20px;
+    width: 95%;
+    transition: all 0.5s;
+      &:hover,
+      &:focus {
+        color: $secondary;
+        background-color: $accent;
+        cursor: pointer;
+      }
+  }
+
+  ::placeholder {
+    color: #000;
+    opacity: 0.9;
+  }
+}

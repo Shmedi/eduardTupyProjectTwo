@@ -1,0 +1,36 @@
+// == NAVIGATION
+
+nav{
+  li{
+    span {
+      border-bottom: 3px solid $accent;
+    }
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 70px;
+  li {
+    list-style-type: none;
+      a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 15px;
+        margin: 0 5px;
+        font-family: $baseFont;
+        color: $altFontColor;
+        font-size: 2.0rem;
+        font-weight: bold;
+        line-height: 29px;
+        letter-spacing: 1px;
+        transition: all 0.3s;
+          &:hover,
+          &:focus {
+            color: $accent;
+            font-weight: 400;
+          }
+      }
+  }
+}
