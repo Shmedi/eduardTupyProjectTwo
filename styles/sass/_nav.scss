@@ -1,5 +1,13 @@
 // == NAVIGATION
 
+i.fa-bars{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 4rem;
+  visibility: hidden;
+}
+
 nav{
   li{
     span {

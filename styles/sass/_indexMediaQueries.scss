@@ -1,0 +1,194 @@
+// =========================================== 1356px ===========================================
+
+@media (max-width:1356px) {
+  .homeHeader {
+    h1 {
+      margin-top: 120px;
+    }
+  }
+
+  .imageContainer {
+    img {
+      top: 500px;
+    }
+  }
+
+  .socialSection {
+    padding: 350px 40px 150px 40px;
+  }
+}
+
+// =========================================== 1250px ===========================================
+
+@media (max-width:1250px) {
+  .featureSection {
+    .locations {
+      margin-top: -120px;
+    }
+  }
+}
+
+// =========================================== 1150px ===========================================
+
+@media (max-width:1150px) {
+  .featureSection {
+    display: block;
+    height: auto;
+    .leftImage,
+    .rightImage {
+      position: static;
+      max-width: 100%;
+      box-shadow: none;
+      border-top: 10px solid $accent;
+      border-bottom: 10px solid $accent;
+    }
+
+    .programs,
+    .locations {
+      padding: 100px 60px;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  article {
+    display: block;
+      img {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border: 10px solid $accent;
+      }
+
+      div {
+        text-align: center;
+        padding: 20px;
+      }
+  }
+}
+
+// =========================================== 800px ===========================================
+
+@media (max-width: 800px) {
+  .imageContainer {
+    img {
+      width: 600px;
+      top: 625px;
+    }
+  }
+}
+
+// =========================================== 620px ===========================================
+
+@media (max-width: 620px) {
+  .homeHeader {
+    h1 {
+      font-size: 5.5rem;
+      margin-top: 250px;
+    }
+  }
+
+  .imageContainer {
+    img {
+      width: 400px;
+      bottom: 0;
+    }
+  }
+
+  .socialSection {
+    padding: 100px 50px;
+    div {
+      h2 {
+        font-size: 3rem;
+        line-height: 50px;
+      }
+
+      a {
+        top: 35px;
+      }
+    }
+  }
+
+  .bannerImage {
+    overflow: hidden;
+    img {
+      width: 200%;
+    }
+  }
+
+  .galleryContainer img:last-child {
+    position: absolute;
+    display: none;
+  }
+}
+
+// =========================================== 440px ===========================================
+
+@media (max-width: 440px) {
+  .homeHeader {
+    nav {
+      display: none;
+    }
+
+    i.fa-bars{
+      visibility: visible;
+      color: $altFontColor;
+    }
+
+    h1 {
+      font-size: 4rem;
+      line-height: 50px;
+      margin-top: 380px;
+    }
+  }
+
+  .imageContainer {
+    img {
+      width: 320px;
+      top: 700px;
+    }
+  }
+
+  .socialSection {
+    text-align: center;
+    padding: 120px 10px;
+      div {
+        padding: 20px;
+          a {
+          position: static;
+          display: inline-block;
+          font-size: 5rem;
+          height: 100px;
+          width: 100px;
+          padding-top: 25px;
+          margin-bottom: 20px;
+      }
+    }
+  }
+
+  .featureSection {
+    .programs,
+    .locations {
+      padding: 80px 10px;
+        h2 {
+          padding-bottom: 30px;
+        }
+    }
+  }
+
+  .vacationInfo {
+    h2 {
+      line-height: 50px;
+      padding-bottom: 30px;
+    }
+  }
+
+  article {
+    div {
+      h2 {
+        line-height: 52px;
+        padding: 30px 0;
+      }
+    }
+  }
+}

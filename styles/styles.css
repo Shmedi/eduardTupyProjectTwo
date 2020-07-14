@@ -276,6 +276,14 @@ body {
   letter-spacing: 1px;
 }
 
+i.fa-bars {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 4rem;
+  visibility: hidden;
+}
+
 nav li span {
   border-bottom: 3px solid #FDD908;
 }
@@ -423,7 +431,7 @@ main button:hover, main button:focus {
   padding-top: 12px;
   position: absolute;
   left: -30px;
-  top: 20px;
+  top: 60px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -439,12 +447,12 @@ main button:hover, main button:focus {
 }
 
 .socialSection div h2 {
-  font-size: 4.5rem;
   font-family: "IM Fell English", serif;
+  font-size: 4.5rem;
   font-weight: 400;
-  padding-bottom: 25px;
-  color: #0D457F;
+  line-height: 99.8px;
   text-transform: uppercase;
+  color: #0D457F;
 }
 
 .altColor {
@@ -926,4 +934,147 @@ footer p {
 footer a {
   color: #000;
   text-decoration: none;
+}
+
+@media (max-width: 1356px) {
+  .homeHeader h1 {
+    margin-top: 120px;
+  }
+  .imageContainer img {
+    top: 500px;
+  }
+  .socialSection {
+    padding: 350px 40px 150px 40px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .featureSection .locations {
+    margin-top: -120px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .featureSection {
+    display: block;
+    height: auto;
+  }
+  .featureSection .leftImage,
+  .featureSection .rightImage {
+    position: static;
+    max-width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-top: 10px solid #FDD908;
+    border-bottom: 10px solid #FDD908;
+  }
+  .featureSection .programs,
+  .featureSection .locations {
+    padding: 100px 60px;
+    text-align: center;
+    margin: 0;
+  }
+  article {
+    display: block;
+  }
+  article img {
+    width: 100%;
+    margin: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 10px solid #FDD908;
+  }
+  article div {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .imageContainer img {
+    width: 600px;
+    top: 625px;
+  }
+}
+
+@media (max-width: 620px) {
+  .homeHeader h1 {
+    font-size: 5.5rem;
+    margin-top: 250px;
+  }
+  .imageContainer img {
+    width: 400px;
+    bottom: 0;
+  }
+  .socialSection {
+    padding: 100px 50px;
+  }
+  .socialSection div h2 {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+  .socialSection div a {
+    top: 35px;
+  }
+  .bannerImage {
+    overflow: hidden;
+  }
+  .bannerImage img {
+    width: 200%;
+  }
+  .galleryContainer img:last-child {
+    position: absolute;
+    display: none;
+  }
+}
+
+@media (max-width: 440px) {
+  .homeHeader nav {
+    display: none;
+  }
+  .homeHeader i.fa-bars {
+    visibility: visible;
+    color: #FFF;
+  }
+  .homeHeader h1 {
+    font-size: 4rem;
+    line-height: 50px;
+    margin-top: 380px;
+  }
+  .imageContainer img {
+    width: 320px;
+    top: 700px;
+  }
+  .socialSection {
+    text-align: center;
+    padding: 120px 10px;
+  }
+  .socialSection div {
+    padding: 20px;
+  }
+  .socialSection div a {
+    position: static;
+    display: inline-block;
+    font-size: 5rem;
+    height: 100px;
+    width: 100px;
+    padding-top: 25px;
+    margin-bottom: 20px;
+  }
+  .featureSection .programs,
+  .featureSection .locations {
+    padding: 80px 10px;
+  }
+  .featureSection .programs h2,
+  .featureSection .locations h2 {
+    padding-bottom: 30px;
+  }
+  .vacationInfo h2 {
+    line-height: 50px;
+    padding-bottom: 30px;
+  }
+  article div h2 {
+    line-height: 52px;
+    padding: 30px 0;
+  }
 }
